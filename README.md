@@ -1,27 +1,44 @@
-# React + TypeScript + Vite
+<h1 align="center">GitHub Finder</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Status: Em desenvolvimento...
 
-Currently, two official plugins are available:
+<p align="center">
+  <img src="/src//assets/preview.png" alt="GitHub Finder Preview" style="border-radius: 4px">
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+<p align="center">Encontre facilmente informações de usuários do GitHub!</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Visão Geral
+O GitHub Finder é um aplicativo web simples que permite aos usuários buscar e visualizar informações de outros usuários do GitHub. Basta inserir o nome de usuário do GitHub de sua escolha, pressionar Enter e receberá informações sobre esse usuário diretamente da API do GitHub.
 
-- Configure the top-level `parserOptions` property like this:
+## Tecnologias
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+- ReactJS
+- TypeScript
+- TailwindCSS 
+- Vite
+
+## Funcionalidades
+- Insira o nome de usuário do GitHub na caixa de pesquisa.
+- Ao pressionar Enter, as informações do usuário são carregadas da API do GitHub.
+- Visualize dados como nome, avatar, repositórios públicos, seguidores e muito mais.
+- Interface amigável e de fácil utilização.
+
+## Executando o Projeto
+Certifique-se de que você tenha o Node.js instalado em seu sistema.
+
+### Pré-requisitos
+
+Certifique-se de que você tenha o Node.js instalado em seu sistema.
+
+### Instalação
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/gafanhotoalexandre/frontend-quiz.git
+cd frontend-quiz
+npm install
+npm run dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
