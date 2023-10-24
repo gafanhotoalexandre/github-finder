@@ -9,6 +9,6 @@
   }
 
   .title { 
-    @apply w-full py-3 text-[#e5e5e5] text-xl text-center font-bold
+    @apply w-full text-[#e5e5e5] text-xl text-center font-bold
   }
 }
