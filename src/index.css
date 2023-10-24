@@ -11,4 +11,39 @@
   .title { 
     @apply w-full text-[#e5e5e5] text-xl text-center font-bold
   }
+
+  .picture-container {
+    @apply w-full h-44 flex items-center justify-center
+  }
+  .picture {
+    @apply w-32 h-32 rounded-full border-8 border-white
+  }
+
+  /* user details */
+  .details-container {
+    @apply w-full flex items-center flex-col
+  }
+  .details-container .name {
+    @apply w-full text-center text-xl font-bold text-[#444]
+  }
+  .details-container .username {
+    @apply w-full text-center text-xs font-medium text-[#777] p-1
+  }
+  .details-container .description {
+    @apply w-[250px] md:w-[300px] h-8 my-2 text-xs text-justify text-[#777] leading-snug overflow-hidden
+  }
+
+  /* user numbes info */
+  .numbers-info-container {
+    @apply w-full py-3 px-4 flex items-center justify-between 
+  }
+  .numbers-info-container .numbers-container {
+    @apply w-full h-14 flex items-center justify-center flex-col rounded-xl transition-all hover:bg-[#00000022]
+  }
+  .numbers-info-container .numbers-container h3 {
+    @apply text-xl text-center text-[#444]
+  }
+  .numbers-info-container .numbers-container h4 {
+    @apply text-xs text-center text-[#777]
+  }
 }

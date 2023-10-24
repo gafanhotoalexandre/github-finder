@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 // pages
 import { Home } from './pages/Home.tsx'
+import { GithubUserProvider } from './contexts/GithubUserContext.tsx'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,8 @@ const router = createBrowserRouter([
 ])
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <GithubUserProvider>
+      <RouterProvider router={router} />
+    </GithubUserProvider>
   </React.StrictMode>,
 )
