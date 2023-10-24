@@ -2,6 +2,7 @@ import { useGithubUser } from '../../hooks/useGithubUser'
 
 export function User() {
   const { userData } = useGithubUser()
+
   return (
     <>
       <section className="picture-container">
